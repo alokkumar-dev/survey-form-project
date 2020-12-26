@@ -1,44 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <mata http-Compatible content="IE=edge"></mata>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>survey form</title>
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <mata http-Compatible content="IE=edge"></mata>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>survey form</title>
 
-    <body>
-       <h1 id="title">freeCodeCamp Survey Form</h1>
-       <p id="description">
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
         Thank you for taking the time to help us improve the platform
-       </p>
-        
-       <form id="survey-form">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name" ><br>
+    </p>
 
-        <label for="email">Email</label><br>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+        <label id="email-label" for="email">Email</label><br>
         <input type="email" id="email" name="email" placeholder="Enter your email"><br>
-        
-        <label for="points">Age(optional)</label><br>
+
+        <label id="number-label" for="points">Age(optional)</label><br>
         <input type="number" id="age" name="age" min="10" max="99"><br>
 
-       <label for="" >Which option best describes your current role?
-    </label><br>
-      <select id="dropdown">
-      <option value="Role">Select current role</option>
-      <option value="Student">Full Tine Job</option>
-      <option value="Full Time Learner">Full Time Learner</option>
-      <option value="Prefer not to say">Prefer not to say</option>
-      <option value="full time study">Full time study</option>
-      <option value="part-time">part-time</option>
-      <option value="Other">Others</option>
-      
+        <label for="">Which option best describes your current role?
+        </label><br>
+        <select id="dropdown">
+            <option value="Role">Select current role</option>
+            <option value="Student">Full Tine Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="full time study">Full time study</option>
+            <option value="Other">Other</option>
 
-      </select>
 
-       </form>
+        </select><br>
+        <label for="">Would you recommend freeCodeCamp to a friend?</label><br>
+
+        <input type="radio" name="radio" value="Defilitely">Definitely<br>
+
+        <input type="radio" name="radio" value="Maybe">Maybe <br>
+
+        <input type="radio" name="radio" value="Not sure">Not surebr <br>
+
+
+        <label for="">What would you like to see improved? (Check all that apply)
+        </label><br>
+
+        <label>
+            <input type="checkbox" value="Back-end Projects">Back-end Projects<br>
+        </label>
+        <label>
+            <input type="checkbox" value="Data Visualization">Data Visualization<br>
+        </label>
+        <label>
+            <input type="checkbox" value="Challenges">Challenges<br>
+        </label>
+        <label>
+            <input type="checkbox" value="Open Source Community">Open Source Community<br>
+        </label>
+        <label>
+            <input type="checkbox" value="Gitter help rooms">Gitter help rooms<br>
+        </label>
+        <label>
+            <input type="checkbox" value="Videos">Videos<br>
+        </label>
+        <label>
+            <input type="checkbox" value="City Meetups">City Meetups<br>
+        </label>
+        <label>
+            <input type="checkbox" value="Wiki">Wiki<br>
+        </label>
+        <label>
+            <input type="checkbox" value="Forum">Forum<br>
+        </label>
+        <label>
+            <input type="checkbox" value="Additional Courses">Additional Courses<br>
+        </label>
         
-    </body>
+         <label>Any comments or suggestions?<br>
+        <input type="textarea" placeholder="Enter your comment here...">
+         </label><br>
+         <input type="button" name="submit" value="submit">
+    </form>
+
+</body>
+
 </html>
