@@ -6,86 +6,87 @@
     <mata http-Compatible content="IE=edge"></mata>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>survey form</title>
-
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">
-        Thank you for taking the time to help us improve the platform
-    </p>
+    <main>
+        <aside>
+            <h1 id="title">GPG Sports Survey Form</h1>
+            <p id="description">
+                Thank you for taking the time to help us improve the platform
+            </p>
+        </aside>
+        <form id="survey-form">
+            <section id="input-style">
+                <label id="name-label" for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br>
 
-    <form id="survey-form">
-        <label id="name-label" for="name">Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+                <label id="email-label" for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br>
 
-        <label id="email-label" for="email">Email</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+                <label id="number-label" for="points">Your Age:</label><br>
+                <input type="number" id="age" name="age" min="15" max="99"><br>
+            </section>
+            <section id="brach-style" >
+            <label for="">In which branch you are:
+            </label><br>
+            <select id="dropdown">
+                <option value="Role">Select current branch</option>
+                <option value="Student">Information Technology</option>
+                <option value="Full Time Learner">Civil Engineering</option>
+                <option value="Prefer not to say">Electronics Engineering</option>
+                <option value="full time study">Mechanical Engineering</option>
 
-        <label id="number-label" for="points">Age(optional)</label><br>
-        <input type="number" id="age" name="age" min="10" max="99"><br>
+            </select><br>
+            </section>
+        <section id="gender-style">
+            <label for="">Select your genger</label><br>
+            <label for="male">
+                <input type="radio" name="radio" value="Defilitely" id="male">Male<br>
+            </label>
+            <label for="female">
+                <input type="radio" name="radio" value="Female" id="female">Female <br>
+            </label>
+            <label for="transgender">
+                <input type="radio" name="radio" value="Transgender" id="transgender">Transgender <br>
+            </label>
+        </section>
+            <section id="chkbx-style">
+                <label for="">Select the sports in which you are interested:
+                </label><br>
 
-        <label for="">Which option best describes your current role?
-        </label><br>
-        <select id="dropdown">
-            <option value="Role">Select current role</option>
-            <option value="Student">Full Tine Job</option>
-            <option value="Full Time Learner">Full Time Learner</option>
-            <option value="Prefer not to say">Prefer not to say</option>
-            <option value="full time study">Full time study</option>
-            <option value="Other">Other</option>
+                <label for="race">
+                    <input type="checkbox" value="16 Meeter Race" id="race">16 Meeter Race<br>
+                </label>
+                <label for="long-jump">
+                    <input type="checkbox" value="Long Jump" id="long-jump">Long Jump<br>
+                </label>
+                <label for="high-jump">
+                    <input type="checkbox" value="High Jump" id="high-jump">High Jump<br>
+                </label>
+                <label for="cricket">
+                    <input type="checkbox" value="Cricket" id="cricket">Cricket<br>
+                </label>
+                <label for="football">
+                    <input type="checkbox" value="FootBall" id="football">FootBall<br>
+                </label>
+                <label for="Badminton">
+                    <input type="checkbox" value="Badminton" id="Badminton">Badminton<br>
+                </label>
+            </section>
 
-
-        </select><br>
-        <label for="">Would you recommend freeCodeCamp to a friend?</label><br>
-
-        <input type="radio" name="radio" value="Defilitely">Definitely<br>
-
-        <input type="radio" name="radio" value="Maybe">Maybe <br>
-
-        <input type="radio" name="radio" value="Not sure">Not surebr <br>
-
-
-        <label for="">What would you like to see improved? (Check all that apply)
-        </label><br>
-
-        <label>
-            <input type="checkbox" value="Back-end Projects">Back-end Projects<br>
-        </label>
-        <label>
-            <input type="checkbox" value="Data Visualization">Data Visualization<br>
-        </label>
-        <label>
-            <input type="checkbox" value="Challenges">Challenges<br>
-        </label>
-        <label>
-            <input type="checkbox" value="Open Source Community">Open Source Community<br>
-        </label>
-        <label>
-            <input type="checkbox" value="Gitter help rooms">Gitter help rooms<br>
-        </label>
-        <label>
-            <input type="checkbox" value="Videos">Videos<br>
-        </label>
-        <label>
-            <input type="checkbox" value="City Meetups">City Meetups<br>
-        </label>
-        <label>
-            <input type="checkbox" value="Wiki">Wiki<br>
-        </label>
-        <label>
-            <input type="checkbox" value="Forum">Forum<br>
-        </label>
-        <label>
-            <input type="checkbox" value="Additional Courses">Additional Courses<br>
-        </label>
-        
-         <label>Any comments or suggestions?<br>
-        <input type="textarea" placeholder="Enter your comment here...">
-         </label><br>
-         <input type="button" name="submit" value="submit">
-    </form>
-
+            <section id="comnt-style">
+                <label>Any quarry:<br>
+                    <textarea name="" id="" cols="25" rows="5" id="Badminton"></textarea>
+                </label><br>
+                <section id="btn-style">
+                    <input type="submit" name="submit" value="submit">
+                    <input type="reset" name="reset" value="reset">
+                </section>
+            </section>
+        </form>
+    </main>
 </body>
 
 </html>
