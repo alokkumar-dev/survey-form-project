@@ -19,14 +19,14 @@
         </aside>
         <form id="survey-form">
             <section id="input-style">
-                <label id="name-label" for="name">Name:</label><br>
+                <label id="name-label" for="name" required>Name:</label><br>
                 <input type="text" id="name" name="name" placeholder="Enter your name"><br>
 
                 <label id="email-label" for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required ><br>
 
-                <label id="number-label" for="points">Your Age:</label><br>
-                <input type="number" id="age" name="age" min="15" max="99"><br>
+                <label id="number-label" for="number"  >Your Age:</label><br>
+                <input type="number" id="number" name="age" min="15" max="99" placeholder="Enter your age"><br>
             </section>
             <section id="brach-style" >
             <label for="">In which branch you are:
@@ -78,10 +78,10 @@
 
             <section id="comnt-style">
                 <label>Any quarry:<br>
-                    <textarea  id="" cols="25" rows="5" id="Badminton"></textarea>
+                    <textarea  id="" cols="" rows="" id="textarea" placeholder="Enter your quarry here.."></textarea>
                 </label><br>
                 <section id="btn-style">
-                    <input type="submit" name="submit" value="submit">
+                    <input type="submit" id="submit" name="Submit" value="Submit">
                     
                 </section>
             </section>

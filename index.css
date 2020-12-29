@@ -1,30 +1,97 @@
-*{
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
 }
-
-
 body{
     width: 100%;
-    height: auto;
+    height:100%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:blueviolet;
+    background-image: url(https://assets.wowparenting.com/wp-content/uploads/2019/02/group-study-3-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+    
+    
 }
 aside{
     text-align: center;
+    background:transparent;
+}
+aside h1{
+    font-size: 35px;
+    text-shadow: 2px 2px 3px black;
+    margin-bottom: .2em;
+}
+aside p{
+    text-shadow: 1px 1px 2px black;
 }
 
 main{
-    width:60%;
-    height: auto;
-    margin: 5% auto;
-    background-color:rgb(180, 134, 224);
+    width:inherit;
+    height:inherit ;
+    margin: 0 auto;
+    background-color:rgba(113, 21, 233, 0.496);
+    
     
 }
-#survey-form{
-    margin:10% 60px;
-
+#male #female #transgender{
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 7px;
 }
-#btn-style{
-   text-align: center;
+#input-style{
+    width: 100%;
+    height: fit-content;
+}
+#name-label,#email-label,#number-label{
+    width: 100%;
+    height: inherit;
+   
+}
+#name,#email,#number,#dropdown{
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    height: 2.5em;
+    margin: 0 auto;
+    background-color: rgba(233, 231, 231, 0.864);
+    margin-bottom: 20px;
+    margin-top: 7px;
+}
+#name:hover,#email:hover,#number:hover,#dropdown:hover{
+    background-color: #fff;
+    transition: .3s all ease;
+} 
+#survey-form{
+    margin:10% auto;
+    background-color:rgba(40, 2, 90, 0.523);
+    padding-left: 7%;
+    padding-top: 7%;
+    width: 70%;
+    font-size: 20px;
+    overflow-y: scroll;
+}
+textarea{
+    width: 90%;
+    height: 8em;   
+    border-radius: 5px;
+    background-color: rgba(233, 231, 231, 0.864);
+    font-size: 20px;
+}
+textarea:hover{
+    background-color: #fff;
+    transition: .3s all ease;
+}
+#btn-style #submit{
+    width: 90%;
+    height:2.5em;
+    color: white;
+    font-size: 20px;
+    margin-top: 7px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgba(4, 169, 4, 0.932);
 }
