@@ -96,6 +96,7 @@ textarea{
     min-height: 8em;
     max-height: auto;
     border-radius: 5px;
+    cursor:pointer;
     background-color: rgba(233, 231, 231, 0.864);
     font-size: 20px;
 }
